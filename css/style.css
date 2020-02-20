@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(21, 32, 43);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  border-bottom: 1px solid rgb(204, 214, 221, 0.1);
+}
+
+.left-menu {
+  display: flex;
+  margin-left: 25px;
+}
+
+.right-menu{
+margin-right: 25px;
+}
+
+.visiblemobile {
+  display: none;
+}
+.nav-links {
+  list-style: none;
+  /*margin: 0;*/
+  padding: 0;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+.left-menu > form input {
+  width: 500px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgb(37, 51, 65);
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(136, 153, 166);
+  opacity: 1; /* Firefox */
+  font-size: 14px;
+}
+
+.fa-twitter {
+  font-size: 30px;
+  color: white;
+  margin-right: 10px;
+}
+
+.fa-check-circle {
+  color: white;
+}
+
+.fa-ellipsis-h {
+  color: rgb(29, 161, 242);
+}
+
+.buttonborder,.buttonbg {
+  border: 1px solid rgb(29, 161, 242);
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-weight: bold;
+}
+
+.banner {
+  position: absolute;
+}
+.buttonborder {
+  color: rgb(29, 161, 242);
+}
+
+.followalign {
+  text-align: right;
+  margin-right: 25px;
+}
+.buttonbg {
+  background-color: rgb(29, 161, 242);
+  color: white;
+}
+
+.profile h1 {
+  color: white;
+  margin-bottom: 0;
+}
+
+.profile > p {
+  color: rgb(136, 153, 166);
+  margin-top: 0px;
+}
+
+.profile .bitcoin {
+  color: rgb(27, 149, 224);
+}
+
+.datejoin {
+  display: flex;
+}
+
+.profile p,a {
+  font-size: 15px;
+}
+
+.datejoin p {
+  margin-right: 10px;
+  color: rgb(136, 153, 166);
+}
+
+.follow {
+  color: rgb(136, 153, 166);
+  margin-right: 10px;
+}
+
+.profile a > span {
+  font-weight: bold;
+  color: white;
+}
+
+.timelines {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.timelines .active {
+  color: rgb(27, 149, 224);
+}
+
+.timelines a {
+  color: rgb(136, 153, 166);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding: 0px 157px;
+  width: 960px;
+  */
+  max-width: 1024px;
+  margin: 0 auto;
+}
+/*
+.active::after{
+    content: '';
+    background: #233785;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 20px;
+}
+*/
+
+.pintext {
+  color: rgb(136, 153, 166);
+  font-size: 12px;
+  margin-left: 65px;
+  margin-bottom: 0px;
+}
+.svgimg {
+  fill: rgb(136, 153, 166);
+  width: 15px;
+}
+
+a > .svgimg {
+  margin-right: 15px;
+}
+
+.profile > img {
+  border-radius: 50%;
+  z-index: 999;
+  position: relative;
+  width: 150px;
+  margin-top: 100px;
+  background-image: linear-gradient(rgb(21, 32, 43), rgb(21, 32, 43)),
+    linear-gradient(to right, rgb(21, 32, 43), rgb(21, 32, 43));
+  border: double 3px rgb(21, 32, 43);
+}
+
+.left {
+  border: 1px solid rgb(204, 214, 221, 0.1);
+  position: relative;
+  /*width: 630px;*/
+  max-width: 674px;
+}
+.right {
+  /*width: 330px;*/
+  margin-left: 10px;
+  max-width: 350px;
+}
+
+.leftimage img {
+  border-radius: 25px;
+  width: 50px;
+  margin-top: 15px;
+}
+
+.leftimage {
+  float: left;
+  width: 13%;
+  text-align: center;
+}
+
+.rightcontent {
+  float: right;
+  width: 87%;
+}
+
+.rightcontent .articleheading {
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.rightcontent h4 > span {
+  color: rgb(136, 153, 166);
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.textwhite {
+  color: white;
+}
+
+.min-content {
+  /*border: 1px solid rgb(204, 214, 221, 0.1);
+        padding: 10px;
+    */
+  border-radius: 25px;
+  margin-right: 15px;
+  overflow: hidden;
+  border-top: 1px solid rgb(204, 214, 221, 0.1);
+  border-left: 1px solid rgb(204, 214, 221, 0.1);
+  border-right: 1px solid rgb(204, 214, 221, 0.1);
+  margin-bottom: 10px;
+}
+.addpadding10 {
+  padding: 10px;
+}
+.articlepin {
+  border-bottom: 15px solid rgb(204, 214, 221, 0.1);
+  padding-bottom: 10px;
+}
+
+.alignimg img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.textcontent {
+  font-size: 15px;
+  margin-top: 0px;
+  padding-right: 2px;
+}
+
+.profilemincontent {
+  border-radius: 25px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+}
+
+.profile {
+  border-bottom: 1px solid rgb(204, 214, 221, 0.1);
+  padding-left: 15px;
+}
+
+article {
+  border-bottom: 1px solid rgb(204, 214, 221, 0.1);
+}
+
+.clearfix {
+  clear: both;
+}
+
+.alignitems {
+  margin-right: 70px;
+  color: rgb(136, 153, 166);
+}
+
+.alignitems i {
+  margin-right: 15px;
+}
+
+aside > header {
+  border: 1px solid rgb(204, 214, 221, 0.1);
+  border-radius: 25px;
+  padding: 0px 15px 15px;
+}
+
+aside header > .buttonbg {
+  display: block;
+  text-align: center;
+  padding: 10px 0px;
+}
+/*
+aside section > h3 {
+    border-bottom: 1px solid rgb(204, 214, 221, 0.1);
+}
+*/
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.imgborder {
+  width: 100%;
+  object-fit: cover;
+  height: 150px;
+}
+.content{
+  margin: 20px 0px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.column {
+  float: left;
+  width: 32%;
+  /*padding: 5px;*/
+  height: 80px;
+  border: 1px solid rgb(204, 214, 221, 0.1);
+}
+
+.rightcontent span > a {
+  float: right;
+}
+
+.rightcontent span > p {
+  margin-top: 0px;
+}
+
+aside .rightcontent > h4 {
+  margin-left: 20px;
+}
+
+aside .leftimage > img {
+  margin-top: 13px;
+}
+
+.border {
+  border-bottom: 1px solid rgb(204, 214, 221, 0.1);
+  padding: 0px 15px;
+}
+
+.likesection {
+  border-radius: 25px;
+  background-color: rgb(25, 39, 52);
+}
+
+.likesection span > span {
+  display: block;
+}
+
+.padding20 {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgb(204, 214, 221, 0.1);
+}
+
+.trends {
+  border-radius: 25px;
+  margin: 10px;
+  padding-left: 15px;
+  background-color: rgb(25, 39, 52);
+}
+
+.trends h3 {
+  padding: 5px;
+}
+
+footer a,
+footer p {
+  color: rgb(136, 153, 166);
+  padding-left: 14px;
+  font-size: 12px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.padding20 h3 {
+  margin: 0px;
+  padding: 0px;
+}
+
+aside {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  nav {
+    flex-flow: column wrap;
+  }
+  .visiblemobile {
+    display: block;
+    margin-top: 5px;
+  }
+  .hiddenmobile {
+    display: none!important;
+  }
+
+  .left-menu,.right-menu{
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  form {
+    margin: 0px 20px;
+  }
+  .left-menu > form input {
+    width: 450px;
+  }
+  .container {
+    flex-direction: column;
+    max-width: 550px;
+  }
+
+  .buttonborder,
+  .buttonbg {
+    padding: 5px 110px;
+  }
+
+  .followalign > .buttonborder {
+    padding: 5px 20px;
+  }
+  .left-menu {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .left,.right {
+    max-width: 100%;
+  }
+  .profile > img {
+    margin-top: 80px;
+  }
+  .profile > img {
+    width: 130px;
+  }
+  .textcontent {
+    font-size: 13px;
+    padding-right: 15px;
+  }
+  .alignitems {
+    margin-right: 55px;
+  }
+  .alignitems i {
+    margin-right: 10px;
+  }
+
+  footer a,
+  footer p {
+    display: inline-block;
+  }
+
+  .right{
+    margin-left: 0px;
+  }
+  .rightcontent .buttonborder{
+    padding: 5px 20px;
+  }
+
+  .column{
+    width: 33.33%;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+ 
+ /*   body {
+    margin: 0;
+    padding: 0;
+  }
+  */
+  .container {
+   
+    max-width: 450px;
+  }
+  .left-menu > form input {
+    width: 370px;
+  }
+  .buttonborder,.buttonbg {
+    padding: 5px 85px;
+  }
+  .left-menu, .right-menu {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .profile > img {
+    width: 100px;
+  }
+  .alignitems {
+    margin-right: 45px;
+  }
+}
+
+
+@media (max-width: 575.98px) { 
+  .container{
+    max-width: 100%;
+  }
+  .buttonborder,.buttonbg {
+    padding: 5px 90px;
+  }
+}
