@@ -78,11 +78,31 @@ margin-right: 25px;
   font-weight: bold;
 }
 
+.align-img{
+  vertical-align: middle;
+}
+
 .banner {
   position: absolute;
 }
 .buttonborder {
   color: rgb(29, 161, 242);
+}
+
+.buttonborder:hover{
+  background-color: rgb(27, 149, 224, .2);
+}
+.buttonbg:hover{
+  background-color: rgba(26, 145, 218);
+}
+
+.fa-ellipsis-h:hover {
+  background-color: rgb(27, 149, 224, .2);
+  border-radius: 25px;
+}
+
+.bitcoin:hover, .follow:hover{
+  text-decoration: underline;
 }
 
 .followalign {
@@ -134,7 +154,7 @@ margin-right: 25px;
 .timelines {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  /*margin: 20px;*/
   font-weight: bold;
 }
 
@@ -144,6 +164,7 @@ margin-right: 25px;
 
 .timelines a {
   color: rgb(136, 153, 166);
+  padding: 20px;
 }
 
 .container {
@@ -156,6 +177,22 @@ margin-right: 25px;
   max-width: 1024px;
   margin: 0 auto;
 }
+
+.timelines a:hover{ 
+  color: rgb(29, 161, 242);
+  background: rgb(27, 149, 224, .2);
+}
+
+article:hover{
+  background: rgba(25, 39, 52, .5);
+  transition: 0.2s ease-out;
+}
+
+.likesection .clearfix:nth-child(2):hover, .likesection .clearfix:nth-child(3):hover, .likesection .clearfix:nth-child(4):hover {
+  background: rgb(25, 39, 60, 0.9);
+  transition: 0.2s ease-out;
+}
+
 /*
 .active::after{
     content: '';
@@ -176,6 +213,7 @@ margin-right: 25px;
 .svgimg {
   fill: rgb(136, 153, 166);
   width: 15px;
+  vertical-align: text-top;
 }
 
 a > .svgimg {
@@ -253,8 +291,14 @@ a > .svgimg {
 .addpadding10 {
   padding: 10px;
 }
+
+.min-content:hover{
+  background: rgba(25, 39, 55, .9);
+}
+
 .articlepin {
-  border-bottom: 15px solid rgb(204, 214, 221, 0.1);
+  /*border-bottom: 15px solid rgb(204, 214, 221, 0.1);*/
+  border-top: 1px solid rgb(204, 214, 221, 0.1);
   padding-bottom: 10px;
 }
 
@@ -278,12 +322,13 @@ a > .svgimg {
 }
 
 .profile {
-  border-bottom: 1px solid rgb(204, 214, 221, 0.1);
+  /*border-bottom: 1px solid rgb(204, 214, 221, 0.1);*/
   padding-left: 15px;
 }
 
 article {
   border-bottom: 1px solid rgb(204, 214, 221, 0.1);
+  border-top: 15px solid rgb(204, 214, 221, 0.1);
 }
 
 .clearfix {
@@ -291,8 +336,35 @@ article {
 }
 
 .alignitems {
-  margin-right: 70px;
+  /*margin-right: 70px;*/
+  flex-basis: 25%;
   color: rgb(136, 153, 166);
+}
+.social-icon {
+  margin-bottom: 10px; 
+  display: flex; 
+  justify-content: space-between;
+}
+
+.social-icon a:nth-child(1):hover{
+  color: #4a98f2;
+}
+.social-icon a:nth-child(2):hover, .social-icon a:nth-child(2):hover  svg{
+  color: #4a98f2;
+  fill: #4a98f2;
+}
+
+.social-icon a:nth-child(3):hover{
+  color: rgba(241, 52, 83, 0.9);
+}
+
+.social-icon a:nth-child(4):hover, .social-icon a:nth-child(4) > svg:hover{
+  fill: #4a98f2;
+  color: #4a98f2
+}
+
+.textcontent > a:hover{
+  text-decoration:underline;
 }
 
 .alignitems i {
@@ -410,7 +482,7 @@ aside {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1000px) {
   nav {
     flex-flow: column wrap;
   }
@@ -439,7 +511,7 @@ aside {
 
   .buttonborder,
   .buttonbg {
-    padding: 5px 110px;
+    padding: 5px 104px;
   }
 
   .followalign > .buttonborder {
@@ -463,9 +535,11 @@ aside {
     font-size: 13px;
     padding-right: 15px;
   }
+  /*
   .alignitems {
     margin-right: 55px;
   }
+  */
   .alignitems i {
     margin-right: 10px;
   }
@@ -486,9 +560,13 @@ aside {
     width: 33.33%;
     border: none;
   }
+
+  aside {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
  
  /*   body {
     margin: 0;
@@ -500,10 +578,10 @@ aside {
     max-width: 450px;
   }
   .left-menu > form input {
-    width: 370px;
+    width: 320px;
   }
   .buttonborder,.buttonbg {
-    padding: 5px 85px;
+    padding: 5px 75px;
   }
   .left-menu, .right-menu {
     margin-left: 0px;
@@ -512,17 +590,54 @@ aside {
   .profile > img {
     width: 100px;
   }
+  /*
   .alignitems {
     margin-right: 45px;
+  }
+  */
+
+  .leftimage {
+    width: 17%;
+  }
+  .rightcontent {
+  width: 83%;
+  }
+
+  .datejoin{
+    display: block;
   }
 }
 
 
-@media (max-width: 575.98px) { 
+@media screen and  (max-width: 365px) { 
   .container{
     max-width: 100%;
   }
-  .buttonborder,.buttonbg {
-    padding: 5px 90px;
+  .left-menu > form input {
+    width: 220px;
   }
+
+  .buttonborder,.buttonbg {
+    padding: 5px 50px;
+  }
+  .timelines a {
+    padding: 10px;
+  }
+
+  .alignitems{
+    flex-basis: auto;
+  }
+  
+}
+
+@media (min-width: 366px) and (max-width: 435px){
+  .left-menu > form input {
+    width: 200px;
+  }
+  .buttonborder, .buttonbg {
+    padding: 5px 57px;
+}
+.timelines a {
+  padding: 10px;
+}
 }
